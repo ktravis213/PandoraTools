@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun  5 15:24:46 2025
-Get Pandora data in a certain latitude/longitude box from RSIG
+Get Pandora data in a certain latitude/longitude box from RSIG - https://www.epa.gov/hesc/remote-sensing-information-gateway
 The url originated in the RSIG tool and is modified here to adjust the time and bounding box
 Written by Prajjwal Rawat, edited by ktravis1
 @author: ktravis1
