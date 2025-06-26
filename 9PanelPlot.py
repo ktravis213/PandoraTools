@@ -146,7 +146,7 @@ plt.show()
 fig, axes = plt.subplots(3, 3, figsize=(15, 15))
 
 # First step - apply the WRMS filter
-filter1 = merged_df_ascent[(merged_df_ascent['NRMS_DS'] < 0.001) & (merged_df_ascent['NRMS_MD'] < 0.001)]
+filter1 = merged_df_ascent[(merged_df_ascent['NRMS_DS'] < 0.01) & (merged_df_ascent['NRMS_MD'] < 0.01) & (merged_df_ascent['Hdist'] < 20)]
 # Second step, apply the uncertainty filter
 filter2 = filter1[(filter1['IUncert_DU_MD'] < filterMD) & (filter1['IUncert_DU_DS'] < filterDS)]
 # Third step, find the data greater than the uncerainty filter but with < 10% total uncertainty. 
